@@ -1,0 +1,131 @@
+.headline {
+  height: 530px;
+
+  &__section {
+    width: 1170px;
+    height: 38px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    &-headline {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: #151515;
+    }
+  }
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151515;
+    align-items: center;
+    &::after {
+      content: "";
+      background-image: url("../../images/Vector.svg");
+      height: 16px;
+      width: 16px;
+      background-size: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.cotegory {
+  .cotegory__card {
+    position: relative;
+    width: auto;
+    height: auto;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 50px;
+  }
+
+  &__heading {
+    margin: 0;
+  }
+
+  &__image {
+    margin-bottom: 16px;
+    border-radius: 12px;
+    z-index: 1;
+  }
+
+  &__heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: $black;
+    margin-bottom: 4px;
+  }
+
+  &__text1 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $dark-gray;
+    margin-bottom: 21px;
+  }
+
+  &__card-text {
+    margin-right: 70px;
+  }
+
+  &__skid {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $green;
+    padding: 2px, 8px;
+    border-radius: 12px;
+    background-color: #d1d1d1;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .cotegory {
+    &__card {
+      display: flex;
+      margin-bottom: 20px;
+
+      &-text {
+        margin-bottom: 25px;
+        display: flex;
+      }
+    }
+
+    &__filter {
+      padding: 15px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 540px){
+  .cotegory__card{
+    display: flex;
+    flex-direction: column;
+  }
+}
